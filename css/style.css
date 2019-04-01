@@ -61,6 +61,93 @@ header {
     display: none;
 }
 
+#ux1 {
+
+	width: 25%;
+	height: 25%; 
+	margin-top: 5%;
+	margin-left: 5%;
+
+}
+
+
+.r1 {
+
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.r1 > p {
+
+	padding-top: 31%;
+
+}
+
+.knap {
+	
+	padding-right: 10%;
+
+}
+
+button {
+
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: cadetblue;
+  border: none;
+  margin-left: 10%; 
+  border-radius: 10%;
+}
+
+
+#r2 {
+
+	margin-left: 19%;
+
+}
+
+#r2 > h3 {
+
+	margin-left: 16%;
+}
+
+#reol {
+
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 2%;
+
+}
+
+#reol1 {
+
+	width: 80%;
+	margin-left: 8%;
+
+}
+
+.footer {
+
+	margin-left: 30%
+}
+
+h4 {
+	margin-left: 8%;
+
+}
+
+#tekst {
+
+	margin-left: 8%;
+}
+
 /* ====================================
 Nav slut
 ==================================== */
