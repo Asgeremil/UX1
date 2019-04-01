@@ -7,7 +7,7 @@
     <title>Untitled document</title>
     <meta name="description" content="Here you add the description of your content">
     <link rel="stylesheet" href="css/style.css">
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -71,9 +71,74 @@
         </a>
     </section>
 
+<!--Åbningstider start-->
+    <aside>
+    <div class="abningstider">
+    <h4 class="time">
+    <div id="open_close"></div>
+</h4>
+   <img src="http://worldartsme.com/images/green-circle-clipart-1.jpg" id="cirkel">
+    <h4 class="tider"> |
+      </h4>
+     <h4 class="tider"> 09:00-16:00
+      </h4>
+  
+       <div class="arrow-down" onclick="this.classList.toggle('active')" id="flip"></div>
+        </div>
+        <div id="panel"> 
+            <h5>Mandag - Torsdag</h5>
+            <p>09:00 - 16:00</p>
+            <h5>Fredag</h5>
+            <p>09:00 - 14:00</p>
+            <h5>Lørdag - Søndag</h5>
+            <p>Lukket</p>        
+        </div>
+    </aside>
 
+<script>
+    var data = [
+    {},
+    {open:9, close:16},
+    {open:9, close:16},
+    {open:9, close:16},
+    {open:9, close:16},
+    {open:9, close:14},
+];
 
+var date = new Date();
+var dayOfWeek = date.getDay(); // 0 is Sunday, 1 is Monday, etc...
+var openingTimes = data[dayOfWeek];
+var openClosed = false; // closed by default
 
+// check that there are opening times for today
+if (openingTimes.hasOwnProperty('open') && openingTimes.hasOwnProperty('close')){
+    var hour = date.getHours()
+    openClosed = openingTimes.open <= hour && hour < openingTimes.close;
+}
+var msg =   function () { 
+    if (openClosed == true){
+        return  "Åbent";
+    } else { 
+        return "Lukket";
+    }
+}
+$( document ).ready(function() {
+    $("#open_close").html(msg());
+});
+       
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle('fast');
+  });
+});
+
+    
+</script>
+    
+<!--Åbningstider slut-->   
 
 </body>
 
