@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display', serif
 }
 
 /* ====================================
@@ -384,3 +385,77 @@ Bog1 slut
         border-bottom: none;
     }
 }
+
+/*Åbningstider start*/
+.abningstider {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #50697C;
+    color: white;
+    padding: 15px;
+}
+
+#cirkel {
+    width: 30px;
+    height: 22px;
+    padding-top: 12px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+#panel{
+text-align: center;
+    padding: 5px;
+    display: none;
+}
+#panel p {
+    font-size: 1.3rem;
+}
+
+#panel h5{
+padding-top: 5px;
+}
+
+.arrow-down {
+  width: 50px;
+  height: 30px;
+  position: relative;
+
+}
+
+.arrow-down.active {
+  background: #50697C;
+}
+
+.arrow-down:before, .arrow-down:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 15px;
+  transition: transform .5s;
+}
+
+.arrow-down:before {
+  right: 21px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.arrow-down:after {
+  right: 10px;
+  transform: rotate(-45deg);
+}
+
+.arrow-down.active:before {
+  transform: rotate(-45deg);
+}
+
+.arrow-down.active:after {
+  transform: rotate(45deg);
+}
+/*Åbningstider slut*/
