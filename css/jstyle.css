@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  'Playfair Display', serif;
+}
+
+/* ====================================
+Nav start
+==================================== */
+
+header {
+    width: 100%;
+    padding: 0 5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: 2%
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+#logo img {
+    width: 50%;
+    margin-top: 20%;
+}
+
+#logo,
+#main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#main-nav a:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ====================================
+Nav slut
+==================================== */
+
+/* joachim koder her */
+main {
+    background-color: aliceblue;
+}
+
+section #gds {
+    width: 20%;
+    box-shadow: 5px 5px 5px grey;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+}
+
+section h1,h3 {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+section .pris {
+    font-size: 110%;
+}
+section .vejl-pris {
+    font-size: 50%;
+
+}
+
+section .description {
+    font-size: 110%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    padding: 0 0 2% 0;
+}
+
+section .author {
+    font-size: 110%;
+}
+
+section .title {
+    font-size: 110%;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    padding: 2% 0 0 0;
+}
+
+section button {
+    border: none;
+    color: white;
+    padding: 1% 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    background-color: #50697C;
+    border-radius: 12px;
+}
+
+section .green {
+    border: none;
+    color: white;
+    padding: 1% 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 12px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    margin: 5%;
+}
+
+.grid h1, h3, p{
+    margin: 2%;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5%;
+    padding: 0 0 2% 0;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+
+}
+
+
+/* joachim koder her */
