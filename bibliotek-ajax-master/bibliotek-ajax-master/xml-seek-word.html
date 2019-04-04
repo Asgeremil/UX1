@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="xml-seek-word.css">
 
   <title>Søg på biblioteket</title>
@@ -16,13 +16,11 @@
 
   <header id="seeker" class="header">
     <h1><a href="xml-seek-word.html"><i class="fas fa-book-reader"></i>
-      Find din bog</a></h1>
-      <hr id="seperator">
+      Biblioteket</a></h1>
 
     <!-- form -->
-    <input id="myTextBox" type="text" placeholder="Søg...">
-    <input id="submit" type="submit" value="&#x1F50D;">
-    
+    <input id="myTextBox" type="text">
+    <input id="submit" type="submit" value="Søg">
   </header>
 
   <!-- søgeresultater -->
@@ -30,7 +28,6 @@
 
   <!-- kan evt. viser uri til bibliotekets api (testredskab) -->
   <div id="test" class=test></div>
-  
 
   <script src="xml-seek-word.js"></script>
 </body>

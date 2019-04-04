@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:  'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 /* ====================================
@@ -11,12 +11,12 @@ Nav start
 
 header {
     width: 100%;
-    padding: 0 5%;
-    position: -webkit-sticky;
-    position: sticky;
+    padding: 2% 5%;
+    padding-bottom: 30%;
     top: 0;
     z-index: 10;
-    margin-top: 2%
+    margin-top: 0%;
+    background-color: #2f2f2f;
 }
 
 #logo-burger {
@@ -26,12 +26,13 @@ header {
 }
 
 #logo img {
-    width: 50%;
+    width: 300%;
     margin-top: 20%;
 }
 
 #logo,
 #main-nav a {
+    font-family: 'Playfair Display', serif;
     color: white;
     text-decoration: none;
 }
@@ -65,29 +66,96 @@ header {
 Nav slut
 ==================================== */
 
-/* joachim koder her */
-main {
-    background-color: aliceblue;
+/* ====================================
+Søgefelt start
+==================================== */
+
+.search-box {
+    position: relative;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 80%;
 }
 
-section #gds {
-    width: 20%;
-    box-shadow: 5px 5px 5px grey;
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    color: #2f2f2f;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: #7bb5c8;
+    cursor: pointer;
+}
+
+.search-btn > i {
+    font-size: 30px;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #2f2f2f;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+    font-weight: bold;
+}
+
+/* ====================================
+Pensum start
+==================================== */
+
+main {
+    background-color: white;
+}
+
+section .gds {
+    width: 35%;
+    box-shadow: 1px 1px 10px 1px grey;
     margin: 2%;
     border-style: solid;
     border-width: 0px 0px 0px 0px;
 }
 
-section h1,h3 {
+#gds-1 {
+    margin-left: 32.5%;
+}
+
+
+section h1,
+h3 {
     border-style: solid;
     border-width: 0px 0px 2px 0px;
 }
 
 section .pris {
-    font-size: 110%;
+    font-size: 22px;
 }
+
 section .vejl-pris {
-    font-size: 50%;
+    font-size: 12px;
 
 }
 
@@ -99,7 +167,9 @@ section .description {
 }
 
 section .author {
-    font-size: 110%;
+    font-size: 20px;
+    margin: 0;
+    color: gray;
 }
 
 section .title {
@@ -116,7 +186,7 @@ section button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 0 0 0;
     cursor: pointer;
     background-color: #50697C;
@@ -145,7 +215,9 @@ section .green {
     margin: 5%;
 }
 
-.grid h1, h3, p{
+.grid h1,
+h3,
+p {
     margin: 2%;
 }
 
@@ -154,10 +226,12 @@ section .green {
     grid-template-columns: auto auto;
     margin: 5%;
     padding: 0 0 2% 0;
+    padding-bottom: 5%;
     border-style: solid;
     border-width: 0 0 2px 0;
 
 }
 
-
-/* joachim koder her */
+/* ====================================
+Pensum slut
+==================================== */
