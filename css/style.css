@@ -10,7 +10,7 @@ Forside start
 ==================================== */
 
 .forside-body {
-    background-color: #8c6e64;
+    background-color: #59433c;
 }
 
 .hylde-1 {
@@ -193,6 +193,14 @@ Søgefelt start
     margin-bottom: 5%;
 }
 
+#seeker p{
+    border-bottom: 1px solid white;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
 .header-2 a {
     text-decoration-line: none;
     color: #fff;
@@ -279,7 +287,6 @@ Foreslag start
     display: flex;
     justify-content: space-around;
     overflow: visible;
-    white-space: nowrap;
 }
 
 .foreslag .line-break-2 {
@@ -536,10 +543,24 @@ section .gds {
     margin: 2%;
     border-style: solid;
     border-width: 0px 0px 0px 0px;
+    margin-bottom: 8%;
+}
+
+#bogpakke{
+    width: 35%;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    margin-bottom: 8%;
 }
 
 #gds-1 {
     margin-left: 32.5%;
+    margin-bottom: 8%;
+}
+
+a .gds{
+    margin-bottom: 8%;
 }
 
 section .pris {
@@ -558,8 +579,18 @@ section .description {
     padding: 0 0 2% 0;
 }
 
+section .grid h1{
+    color: #2b2b2b;
+    font-size: 35px;
+}
+
+section .grid #flip{
+    color: #2b2b2b;
+    font-size: 25px;
+}
+
 section .author {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
     color: gray;
 }
@@ -597,6 +628,7 @@ section .green {
     cursor: pointer;
     background-color: green;
     border-radius: 12px;
+    margin-top: 5%;
 }
 
 
@@ -607,12 +639,6 @@ section .green {
     margin: 5%;
 }
 
-.grid h1,
-h3,
-p {
-    margin: 2%;
-}
-
 .grid-items {
     display: grid;
     grid-template-columns: auto auto;
@@ -621,7 +647,14 @@ p {
     padding-bottom: 5%;
     border-style: solid;
     border-width: 0 0 2px 0;
+}
 
+section .line-break-1 {
+    border-bottom: 1px solid black;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 

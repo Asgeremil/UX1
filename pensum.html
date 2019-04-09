@@ -19,7 +19,7 @@
 
     <header>
         <section id="logo-burger">
-            <a id="logo" href="index.html"><img src="images/Logo.png" alt="Erhvervakadameiets logo"></a>
+            <a id="logo" href="side-1.html"><img src="images/Logo.png" alt="Erhvervakadameiets logo"></a>
             <label for="toggle">
                 <i class="fas fa-user"></i>
             </label>
@@ -28,7 +28,7 @@
             <input type="checkbox" id="toggle" class="hidden">
             <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
             <ul id="main-nav">
-                <li><a href="pensum.html">Pensum</a></li>
+                <li><a href="pensum.html">Semesterbøger</a></li>
                 <li><a href="#">Factum Books</a></li>
                 <li><a href="#">Foreslag</a></li>
             </ul>
@@ -37,6 +37,9 @@
         <section id="seeker" class="header-2">
             <h1><a href="xml-seek-word.html">
                     Find din bog</a></h1>
+                    <p class="line-break-1"></p>
+                    
+
 
             <!-- form -->
             <input id="myTextBox" type="text" placeholder="Søg...">
@@ -54,8 +57,8 @@
 
         <section>
             <div class="grid">
-                <h1>Pensum</h1>
-                <div id="flip">Semester .1</div>
+                <h1>Semesterbøger</h1>
+                <div id="flip">1. Semester</div>
             </div>
         </section>
 
@@ -143,7 +146,7 @@
 
                 <section>
 
-                    <img class="gds" src="images/placeholder.png" alt="Learning Web Design 5e">
+                    <img class="gds" src="images/learn.jpg" alt="Learning Web Design 5e">
 
                     <p class="title">Learning Web Design 5e</p>
                     <br>
@@ -195,14 +198,17 @@
 
                 <section>
 
-                    <img class="gds" src="images/bmg.jpg" alt="Business Model Generation, eng udg.">
+                    <img id="bogpakke" src="images/bogpakke.png" alt="Business Model Generation, eng udg.">
 
                     <br>
-                    <p class="bogtype">BOGPAKKEN INDEHOLDER ALLE</p>
+                    <p class="bogtype">BOGPAKKEN INDEHOLDER ALLE<br>OVENSTÅENDE BØGER</p>
+
+                    <p class="line-break-1"></p>
 
 
                     <p class="pris">195,00 kr</p>
 
+                    <p class="line-break-1"></p>
 
                     <div class="grid-item">
                         <button class="green">Bestil bogpakke</button>
@@ -226,6 +232,7 @@
                 $("#pensum-list").slideToggle("slow");
             });
         });
+
     </script>
 
     <script src="js/xml-seek-word.js"></script>
